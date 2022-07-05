@@ -66,9 +66,20 @@ group :development do
   # gem "spring"
 end
 
+group :development, :test do
+  gem 'database_cleaner'
+  gem 'rspec-rails'
+end
+
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+# add devise
+gem 'devise'
+
+# add cancancan
+gem 'cancancan'
