@@ -1,4 +1,4 @@
-class splashController < ApplicationController
+class SplashController < ApplicationController
   def index
     redirect_to categories_url if current_user
   end
