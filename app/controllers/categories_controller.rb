@@ -1,8 +1,8 @@
 class CategoriesController < ApplicationController
   load_and_authorize_resource
 
-  before_action :set_category, only: %i[show destroy]
   before_action :set_user
+  before_action :set_category, only: %i[show destroy]
 
   def index
     @categories = @user.categories
