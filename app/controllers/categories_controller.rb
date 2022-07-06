@@ -5,7 +5,7 @@ class CategoriesController < ApplicationController
   before_action :set_user
 
   def index
-    @categories = Category.all
+    @categories = @user.categories
   end
 
   def show

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  resources :categories, only: [:index, :show, :create, :update, :destroy] do
+  resources :categories, only: [:index, :show, :new, :create, :destroy] do
     resources :transacts, only: [:new, :create, :destroy]
   end
 

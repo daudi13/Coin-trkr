@@ -1,0 +1,19 @@
+# <div class="category-page">
+# <%= render 'layouts/header', title: 'Categories' , back_url: nil, logout: true %>
+# <div class="content-box">
+# <div class="categories">
+# <% @categories.each do |category| %>
+#   <%= link_to category do %>
+#     <img src="<%= category.icon %>" alt="category icon">
+#     <div class="category-desc-box">
+#     <h2 class="category-name"><%= category.name %></h2>
+#     <p class="category-time"><%= category.created_at.strftime('%d %B %Y')%></p>
+#     </div>
+#     <p class= "category-amount">$<%=category.transacts.sum(:amount)%></p>
+#     <%end%>
+#   <%end%>
+# </div>
+# </div>
+# </div>
+
+<h1>Hello world</h1>
