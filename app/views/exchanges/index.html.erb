@@ -5,8 +5,8 @@
           <span class="back">&#8701;</span>
       <% end %>
     </div>
-    <h2 class="text_white">Transactions for <span><%= @category.name %></span></h2>
-    <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "sign_out text_white" %>
+    <h2 class="text_white"><span><%= @category.name %>  bill </span></h2>
+    <%= button_to "log out", destroy_user_session_path, method: :delete, class: "sign_out text_white" %>
   </div>
 
   <div class="total_txt text-center">TOTAL: $<%=@category.total_amount%> </div>
