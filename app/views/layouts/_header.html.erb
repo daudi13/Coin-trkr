@@ -1,6 +1,6 @@
 <header>
 <nav>
-  <%= if back_url.nil? %>
+  <% if back_url.nil? %>
     <div style="width: 35px"></div>
   <% else %>
     <%= link_to back_url do %>
@@ -9,7 +9,7 @@
   <% end %>
     <h1><%= title %></h1>
     <% if logout %>
-      <%= button_to destory_user_session_path, method: :delete do %>
+      <button>log out</button>
         <i class="fa fa-sign-out fa-2x">
       <% end %>
     <% else %>
