@@ -10,12 +10,21 @@
   height: 100vh;
 
   .heading {
+
+    .logo {
+      margin-left: auto;
+      font-size: 40px;
+      margin-left: 40px;
+      margin-bottom: 0;
+    }
+
     .title {
       font-size: 3.2rem;
       padding: 0 0 200px 0;
       font-family: 'Berkshire Swash', cursive;
       font-weight: 900;
       color: $prim_gray_col;
+      margin-top: 0;
     }
   }
 
