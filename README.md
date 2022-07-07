@@ -5,6 +5,8 @@
 ![](./mobile.png)
 ![](./mobile%20(1).png)
 
+[live link](https://cointrkr.herokuapp.com/)
+
 ## ERD Diagram
 ![](./erd_diagram.png)
 ## Getting started
