@@ -6,7 +6,7 @@
       <div class="item3"></div>
     </div>
     <h2 class="text_white categ_title">CATEGORIES</h2>
-    <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "sign_out text_white" %>
+    <%= button_to "log out", destroy_user_session_path, method: :delete, class: "sign_out text_white" %>
   </div>
   <div class="categories">
     <% if @categories.length == 0 %>
