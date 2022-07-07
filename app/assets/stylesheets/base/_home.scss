@@ -1,5 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/0376a58122a881d16a294512d3c947b1?family=ProximaNova-Regular);
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@400;600;700&display=swap');
 @import './variables';
 @import './mixins';
 
@@ -12,7 +13,7 @@
     .title {
       font-size: 3.2rem;
       padding: 0 0 200px 0;
-      font-family: 'Dancing Script', sans-serif;
+      font-family: 'Berkshire Swash', cursive;
       font-weight: 900;
       color: $prim_gray_col;
     }
