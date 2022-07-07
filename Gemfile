@@ -69,8 +69,8 @@ group :development do
 end
 
 group :development, :test do
-  gem "database_cleaner"
-  gem "rspec-rails"
+  gem 'database_cleaner'
+  gem 'rspec-rails'
 end
 
 group :test do
@@ -80,8 +80,8 @@ group :test do
   gem 'webdrivers'
 end
 
-#add devise
+# add devise
 gem 'devise'
 
-#add cancancan
+# add cancancan
 gem 'cancancan'
