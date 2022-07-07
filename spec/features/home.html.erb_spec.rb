@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'login page', type: :feature do
   before(:each) do
-    @user = User.create(name: 'Candy', email: 'candy@gmail.com',
+    @user = User.create(name: 'david', email: 'david@gmail.com',
                         password: '123456', created_at: Time.now, updated_at: Time.now)
     visit user_session_path
   end
@@ -36,7 +36,7 @@ RSpec.describe 'login page', type: :feature do
 
     it 'should redirect to users page after logging in with right entries' do
       visit new_user_session_path
-      fill_in 'Email', with: 'candy@gmail.com'
+      fill_in 'Email', with: 'david@gmail.com'
       fill_in 'Password', with: '123456'
       click_button 'Log in'
       expect(page).to have_http_status :ok
@@ -53,7 +53,7 @@ RSpec.describe 'login page', type: :feature do
 
     it 'I can not access this pages if user is connected' do
       visit new_user_session_path
-      fill_in 'user_email',	with: 'candy@gmail.com'
+      fill_in 'user_email',	with: 'david@gmail.com'
       fill_in 'user_password',	with: '123456'
       click_button 'Log in'
 

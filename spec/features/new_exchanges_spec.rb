@@ -2,11 +2,11 @@ require 'rails_helper'
 
 RSpec.describe 'new transaction page', type: :feature do
   before(:each) do
-    @candy = User.create(name: 'Candy', email: 'candy@gmail.com',
+    @david = User.create(name: 'david', email: 'david@gmail.com',
                          password: '123456', created_at: Time.now, updated_at: Time.now)
 
     @cat1 = Category.create(name: 'Category_1', icon: 'https://static.thenounproject.com/png/407799-200.png',
-                            user: @candy)
+                            user: @david)
   end
 
   after(:each) do
@@ -23,7 +23,7 @@ RSpec.describe 'new transaction page', type: :feature do
 
   it 'should access this page if user is connected' do
     visit new_user_session_path
-    fill_in 'Email', with: 'candy@gmail.com'
+    fill_in 'Email', with: 'david@gmail.com'
     fill_in 'Password', with: '123456'
     click_button 'Log in'
 

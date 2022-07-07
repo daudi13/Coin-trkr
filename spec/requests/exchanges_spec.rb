@@ -2,11 +2,11 @@ require 'rails_helper'
 
 RSpec.describe 'Exchanges', type: :request do
   before(:each) do
-    @candy = User.create(name: 'Candy', email: 'candy@gmail.com', password: '123456')
-    sign_in @candy
+    @david = User.create(name: 'david', email: 'david@gmail.com', password: '123456')
+    sign_in @david
 
-    @cat1 = Category.create(name: 'Category_1', icon: 'icon_1', user_id: @candy.id)
-    @ex1 = Exchange.create(name: 'C&A', amount: 39.95, author_id: @candy.id)
+    @cat1 = Category.create(name: 'Category_1', icon: 'icon_1', user_id: @david.id)
+    @ex1 = Exchange.create(name: 'C&A', amount: 39.95, author_id: @david.id)
   end
 
   describe 'GET /index' do
@@ -27,7 +27,7 @@ RSpec.describe 'Exchanges', type: :request do
   describe 'POST /create' do
     context 'with valid parameters' do
       let(:valid_attributes) do
-        { name: 'C&A', amount: 39.95, author_id: @candy.id }
+        { name: 'C&A', amount: 39.95, author_id: @david.id }
       end
 
       it 'redirects to the created exchange' do

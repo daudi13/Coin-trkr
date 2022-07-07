@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'Categories', type: :request do
   before(:each) do
-    @candy = User.create(name: 'Candy', email: 'candy@gmail.com', password: '123456')
-    sign_in @candy
+    @david = User.create(name: 'david', email: 'david@gmail.com', password: '123456')
+    sign_in @david
     get categories_url
   end
 
@@ -38,22 +38,22 @@ RSpec.describe 'Categories', type: :request do
 
   describe 'should create category' do
     before(:each) do
-      @category = Category.create(name: 'Shoes', icon: 'S', user_id: @candy.id)
+      @category = Category.create(name: 'Shoes', icon: 'S', user_id: @david.id)
     end
     it 'should create new category' do
       expect(@category).to be_valid
     end
 
     it 'should be of the person of id' do
-      expect(@candy.categories.count).to be 1
+      expect(@david.categories.count).to be 1
       @category.destroy
-      expect(@candy.categories.count).to be 0
+      expect(@david.categories.count).to be 0
     end
   end
 
   describe 'should not beacuse invali entry' do
     before(:each) do
-      @category = Category.create(name: 'Shoes', user_id: @candy.id)
+      @category = Category.create(name: 'Shoes', user_id: @david.id)
     end
     it 'should be invalid' do
       expect(@category).not_to be_valid

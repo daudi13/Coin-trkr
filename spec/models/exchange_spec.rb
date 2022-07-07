@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Exchange, type: :model do
   before(:each) do
-    @candy = User.create(name: 'Candy', email: 'candy@gmail.com', password: '123456')
-    expect(@candy).to be_valid
-    @exchange = Exchange.create(name: 'Shoes', amount: 'S', author_id: @candy.id)
+    @david = User.create(name: 'david', email: 'david@gmail.com', password: '123456')
+    expect(@david).to be_valid
+    @exchange = Exchange.create(name: 'Shoes', amount: 'S', author_id: @david.id)
   end
 
   after(:each) do
