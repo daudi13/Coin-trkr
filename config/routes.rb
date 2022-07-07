@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
+  # get 'home/home'
+  devise_for :users, :controllers => { registrations: 'users/registrations' }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  resources :categories, only: [:index, :show, :new, :create, :destroy] do
-    resources :transacts, only: [:new, :create, :destroy]
+  # Defines the root path route ("/")
+  root "home#home"
+  resources :categories, only: [:index, :new, :create, :destroy] do
+    resources :exchanges, only: [:index, :new, :create, :destroy]
   end
-
-  resources :splash, only: [:index]
-  root 'splash#index'
 end
