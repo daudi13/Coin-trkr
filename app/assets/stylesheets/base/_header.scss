@@ -20,16 +20,12 @@
 }
 
 .back_btn {
-  font-size: 1.5rem;
-  font-weight: 700;
-  border: 2px solid $white_col;
-  padding: 8px;
-  border-radius: 50%;
+  font-size: 25px;
+
 
   &:hover {
     font-weight: 700;
     transform: scale(1.05);
     color: $white_col;
-    border: 3px solid $white_col;
   }
 }
