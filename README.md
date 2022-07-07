@@ -20,6 +20,9 @@
 - Open `https://localhost:3000` in your browser
 - to run test `bundle exec rspec`
 
+## Project design
+Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
+
 
 ## Authors
 
@@ -41,3 +44,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 This project is [GNU General Punlic License](./LICENSE) licensed
+
+
